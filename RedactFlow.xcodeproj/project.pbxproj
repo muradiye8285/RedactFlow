@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000001 /* RedactFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000021 /* RedactFlowApp.swift */; };
+		B00000000000000000000002 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000022 /* AppRootView.swift */; };
+		B00000000000000000000003 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000023 /* AppTheme.swift */; };
+		B00000000000000000000004 /* RedactionHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000024 /* RedactionHistoryController.swift */; };
+		B00000000000000000000005 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000025 /* HomeViewModel.swift */; };
+		B00000000000000000000006 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000026 /* HomeView.swift */; };
+		B00000000000000000000007 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000027 /* OnboardingView.swift */; };
+		B00000000000000000000008 /* PhotoEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000028 /* PhotoEditorViewModel.swift */; };
+		B00000000000000000000009 /* PhotoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000029 /* PhotoEditorView.swift */; };
+		B0000000000000000000000A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002A /* SettingsView.swift */; };
+		B0000000000000000000000B /* VideoEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002B /* VideoEditorViewModel.swift */; };
+		B0000000000000000000000C /* VideoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002C /* VideoEditorView.swift */; };
+		B0000000000000000000000D /* AppChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002D /* AppChrome.swift */; };
+		B0000000000000000000000E /* RegionEditingCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002E /* RegionEditingCanvas.swift */; };
+		B000000000000000000000018 /* MediaLibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000038 /* MediaLibraryPicker.swift */; };
+		B0000000000000000000000F /* GeometryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002F /* GeometryExtensions.swift */; };
+		B000000000000000000000010 /* RedactionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000030 /* RedactionModels.swift */; };
+		B000000000000000000000011 /* MediaPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000031 /* MediaPickerService.swift */; };
+		B000000000000000000000012 /* PhotoLibrarySaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000032 /* PhotoLibrarySaveService.swift */; };
+		B000000000000000000000013 /* PhotoRedactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000033 /* PhotoRedactionService.swift */; };
+		B000000000000000000000014 /* VideoRedactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000034 /* VideoRedactionService.swift */; };
+		B000000000000000000000017 /* PhotoLibraryPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000037 /* PhotoLibraryPermissionService.swift */; };
+		B000000000000000000000019 /* LimitedLibraryBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000039 /* LimitedLibraryBrowserView.swift */; };
+		B00000000000000000000001A /* LimitedLibraryBrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003A /* LimitedLibraryBrowserViewModel.swift */; };
+		B00000000000000000000001B /* LimitedLibraryImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003B /* LimitedLibraryImportService.swift */; };
+		B000000000000000000000015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000035 /* Assets.xcassets */; };
+		B000000000000000000000016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000036 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B00000000000000000000020 /* RedactFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedactFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00000000000000000000021 /* RedactFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactFlowApp.swift; sourceTree = "<group>"; };
+		B00000000000000000000022 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		B00000000000000000000023 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		B00000000000000000000024 /* RedactionHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactionHistoryController.swift; sourceTree = "<group>"; };
+		B00000000000000000000025 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B00000000000000000000026 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B00000000000000000000027 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B00000000000000000000028 /* PhotoEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorViewModel.swift; sourceTree = "<group>"; };
+		B00000000000000000000029 /* PhotoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorView.swift; sourceTree = "<group>"; };
+		B0000000000000000000002A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B0000000000000000000002B /* VideoEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorViewModel.swift; sourceTree = "<group>"; };
+		B0000000000000000000002C /* VideoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorView.swift; sourceTree = "<group>"; };
+		B0000000000000000000002D /* AppChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChrome.swift; sourceTree = "<group>"; };
+		B0000000000000000000002E /* RegionEditingCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionEditingCanvas.swift; sourceTree = "<group>"; };
+		B00000000000000000000038 /* MediaLibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryPicker.swift; sourceTree = "<group>"; };
+		B0000000000000000000002F /* GeometryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryExtensions.swift; sourceTree = "<group>"; };
+		B00000000000000000000030 /* RedactionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactionModels.swift; sourceTree = "<group>"; };
+		B00000000000000000000031 /* MediaPickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerService.swift; sourceTree = "<group>"; };
+		B00000000000000000000032 /* PhotoLibrarySaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibrarySaveService.swift; sourceTree = "<group>"; };
+		B00000000000000000000033 /* PhotoRedactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRedactionService.swift; sourceTree = "<group>"; };
+		B00000000000000000000034 /* VideoRedactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRedactionService.swift; sourceTree = "<group>"; };
+		B00000000000000000000037 /* PhotoLibraryPermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPermissionService.swift; sourceTree = "<group>"; };
+		B00000000000000000000039 /* LimitedLibraryBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedLibraryBrowserView.swift; sourceTree = "<group>"; };
+		B0000000000000000000003A /* LimitedLibraryBrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedLibraryBrowserViewModel.swift; sourceTree = "<group>"; };
+		B0000000000000000000003B /* LimitedLibraryImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedLibraryImportService.swift; sourceTree = "<group>"; };
+		B00000000000000000000035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B00000000000000000000036 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B00000000000000000000062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B00000000000000000000040 = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000042 /* RedactFlow */,
+				B00000000000000000000041 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B00000000000000000000041 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000020 /* RedactFlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000042 /* RedactFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000043 /* App */,
+				B00000000000000000000044 /* Core */,
+				B00000000000000000000045 /* Features */,
+				B00000000000000000000046 /* Shared */,
+				B00000000000000000000047 /* Services */,
+				B00000000000000000000035 /* Assets.xcassets */,
+				B00000000000000000000048 /* Preview Content */,
+			);
+			path = RedactFlow;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000043 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000021 /* RedactFlowApp.swift */,
+				B00000000000000000000022 /* AppRootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000044 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000023 /* AppTheme.swift */,
+				B00000000000000000000024 /* RedactionHistoryController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000045 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000049 /* Home */,
+				B0000000000000000000004A /* Onboarding */,
+				B0000000000000000000004B /* PhotoRedaction */,
+				B0000000000000000000004C /* Settings */,
+				B0000000000000000000004D /* VideoRedaction */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000049 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000025 /* HomeViewModel.swift */,
+				B00000000000000000000026 /* HomeView.swift */,
+				B0000000000000000000003A /* LimitedLibraryBrowserViewModel.swift */,
+				B00000000000000000000039 /* LimitedLibraryBrowserView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000004A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000027 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000004B /* PhotoRedaction */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000028 /* PhotoEditorViewModel.swift */,
+				B00000000000000000000029 /* PhotoEditorView.swift */,
+			);
+			path = PhotoRedaction;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000004C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000002A /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000004D /* VideoRedaction */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000002B /* VideoEditorViewModel.swift */,
+				B0000000000000000000002C /* VideoEditorView.swift */,
+			);
+			path = VideoRedaction;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000046 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000004E /* Components */,
+				B0000000000000000000004F /* Extensions */,
+				B00000000000000000000050 /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000004E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000002D /* AppChrome.swift */,
+				B00000000000000000000038 /* MediaLibraryPicker.swift */,
+				B0000000000000000000002E /* RegionEditingCanvas.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000004F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000002F /* GeometryExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000050 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000030 /* RedactionModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000047 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000003B /* LimitedLibraryImportService.swift */,
+				B00000000000000000000031 /* MediaPickerService.swift */,
+				B00000000000000000000037 /* PhotoLibraryPermissionService.swift */,
+				B00000000000000000000032 /* PhotoLibrarySaveService.swift */,
+				B00000000000000000000033 /* PhotoRedactionService.swift */,
+				B00000000000000000000034 /* VideoRedactionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B00000000000000000000048 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000036 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B00000000000000000000051 /* RedactFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00000000000000000000073 /* Build configuration list for PBXNativeTarget "RedactFlow" */;
+			buildPhases = (
+				B00000000000000000000061 /* Sources */,
+				B00000000000000000000062 /* Frameworks */,
+				B00000000000000000000063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedactFlow;
+			productName = RedactFlow;
+			productReference = B00000000000000000000020 /* RedactFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B00000000000000000000060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					B00000000000000000000051 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = B00000000000000000000070 /* Build configuration list for PBXProject "RedactFlow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B00000000000000000000040;
+			productRefGroup = B00000000000000000000041 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B00000000000000000000051 /* RedactFlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B00000000000000000000063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B000000000000000000000015 /* Assets.xcassets in Resources */,
+				B000000000000000000000016 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B00000000000000000000061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000001 /* RedactFlowApp.swift in Sources */,
+				B00000000000000000000002 /* AppRootView.swift in Sources */,
+				B00000000000000000000003 /* AppTheme.swift in Sources */,
+				B00000000000000000000004 /* RedactionHistoryController.swift in Sources */,
+				B00000000000000000000005 /* HomeViewModel.swift in Sources */,
+				B00000000000000000000006 /* HomeView.swift in Sources */,
+				B00000000000000000000001A /* LimitedLibraryBrowserViewModel.swift in Sources */,
+				B000000000000000000000019 /* LimitedLibraryBrowserView.swift in Sources */,
+				B00000000000000000000007 /* OnboardingView.swift in Sources */,
+				B00000000000000000000008 /* PhotoEditorViewModel.swift in Sources */,
+				B00000000000000000000009 /* PhotoEditorView.swift in Sources */,
+				B0000000000000000000000A /* SettingsView.swift in Sources */,
+				B0000000000000000000000B /* VideoEditorViewModel.swift in Sources */,
+				B0000000000000000000000C /* VideoEditorView.swift in Sources */,
+				B0000000000000000000000D /* AppChrome.swift in Sources */,
+				B000000000000000000000018 /* MediaLibraryPicker.swift in Sources */,
+				B0000000000000000000000E /* RegionEditingCanvas.swift in Sources */,
+				B0000000000000000000000F /* GeometryExtensions.swift in Sources */,
+				B000000000000000000000010 /* RedactionModels.swift in Sources */,
+				B000000000000000000000011 /* MediaPickerService.swift in Sources */,
+				B00000000000000000000001B /* LimitedLibraryImportService.swift in Sources */,
+				B000000000000000000000017 /* PhotoLibraryPermissionService.swift in Sources */,
+				B000000000000000000000012 /* PhotoLibrarySaveService.swift in Sources */,
+				B000000000000000000000013 /* PhotoRedactionService.swift in Sources */,
+				B000000000000000000000014 /* VideoRedactionService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B00000000000000000000071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B00000000000000000000072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B00000000000000000000074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 364S894TG2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RedactFlow;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "RedactFlow saves edited photos and videos to your library. Your media stays on your device.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "RedactFlow lets you pick photos and videos from your library for offline redaction.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradiye.RedactFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B00000000000000000000075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 364S894TG2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RedactFlow;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "RedactFlow saves edited photos and videos to your library. Your media stays on your device.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "RedactFlow lets you pick photos and videos from your library for offline redaction.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muradiye.RedactFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B00000000000000000000070 /* Build configuration list for PBXProject "RedactFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00000000000000000000071 /* Debug */,
+				B00000000000000000000072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00000000000000000000073 /* Build configuration list for PBXNativeTarget "RedactFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B00000000000000000000074 /* Debug */,
+				B00000000000000000000075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B00000000000000000000060 /* Project object */;
+}
