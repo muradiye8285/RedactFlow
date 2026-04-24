@@ -3,170 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RedactFlow | Privacy & Support</title>
+  <title>RedactFlow Privacy, Support, and App Links</title>
   <meta
     name="description"
-    content="RedactFlow privacy policy and support information."
+    content="RedactFlow privacy policy, support information, and app links. Discover an iPhone app to blur photos, pixelate videos, redact screenshots, and hide sensitive details before sharing."
   >
+  <meta
+    name="keywords"
+    content="blur photos iphone, pixelate video ios, hide sensitive details, redact screenshots, privacy photo app, blur faces iphone, hide personal info in photos, RedactFlow"
+  >
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://muradiye8285.github.io/RedactFlow/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RedactFlow Privacy, Support, and App Links">
+  <meta
+    property="og:description"
+    content="Privacy, support, and app information for RedactFlow, an iPhone app to blur photos, pixelate videos, and hide sensitive details."
+  >
+  <meta property="og:url" content="https://muradiye8285.github.io/RedactFlow/">
+  <meta property="og:site_name" content="RedactFlow">
+
   <style>
     :root {
       color-scheme: dark;
-      --bg: #09111f;
-      --bg-accent: #13233d;
-      --panel: rgba(14, 23, 40, 0.84);
-      --panel-strong: rgba(18, 31, 54, 0.96);
-      --text: #f5f8ff;
-      --muted: #a6b4d2;
+      --bg: #0b1322;
+      --panel: #111c31;
+      --panel-soft: #16243d;
+      --text: #f4f7ff;
+      --muted: #b0bdd7;
       --line: rgba(255, 255, 255, 0.1);
-      --accent: #8bb8ff;
-      --accent-strong: #c6d8ff;
-      --shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
-      --radius-xl: 28px;
-      --radius-lg: 22px;
-      --radius-md: 16px;
-      --max-width: 980px;
+      --link: #cfe0ff;
+      --button: #dce8ff;
+      --button-text: #09111f;
+      --max: 920px;
+      --radius: 18px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
-      min-height: 100vh;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(105, 137, 255, 0.32), transparent 34%),
-        radial-gradient(circle at top right, rgba(196, 124, 255, 0.18), transparent 28%),
-        linear-gradient(180deg, var(--bg-accent), var(--bg));
+      background: linear-gradient(180deg, #12203a 0%, var(--bg) 24%, #08101d 100%);
     }
 
-    a {
-      color: var(--accent-strong);
-    }
+    a { color: var(--link); }
 
-    .shell {
-      width: min(calc(100% - 32px), var(--max-width));
+    .wrap {
+      width: min(calc(100% - 24px), var(--max));
       margin: 0 auto;
-      padding: 24px 0 56px;
+      padding: 18px 0 40px;
+    }
+
+    .section,
+    .hero {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      padding: 22px;
+      margin-top: 16px;
     }
 
     .hero {
-      position: relative;
-      overflow: hidden;
-      padding: 28px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-xl);
-      background:
-        linear-gradient(145deg, rgba(137, 184, 255, 0.2), rgba(30, 44, 82, 0.68)),
-        var(--panel-strong);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(18px);
+      background: linear-gradient(145deg, rgba(148, 190, 255, 0.16), rgba(18, 33, 60, 0.96));
     }
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto -80px -80px auto;
-      width: 240px;
-      height: 240px;
-      background: radial-gradient(circle, rgba(139, 184, 255, 0.22), transparent 68%);
-      pointer-events: none;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
+    .eyebrow,
+    .pill {
+      display: inline-block;
+      padding: 7px 11px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
       color: var(--muted);
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.02em;
-    }
-
-    h1 {
-      margin: 18px 0 10px;
-      font-size: clamp(34px, 7vw, 58px);
-      line-height: 0.98;
-      letter-spacing: -0.04em;
-    }
-
-    .hero p {
-      max-width: 720px;
-      margin: 0;
-      color: var(--muted);
-      font-size: 17px;
-      line-height: 1.65;
-    }
-
-    .hero-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
-    }
-
-    .hero-links a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 46px;
-      padding: 0 16px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.08);
-      color: var(--text);
       text-decoration: none;
-      font-weight: 600;
     }
 
-    .hero-links a.primary {
-      color: #08111f;
-      background: linear-gradient(135deg, #d5e4ff, #95bfff);
-      border-color: transparent;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 18px;
-      margin-top: 18px;
-    }
-
-    .card {
-      padding: 24px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      background: var(--panel);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(18px);
-    }
-
-    h2 {
-      margin: 0 0 8px;
-      font-size: 26px;
+    h1, h2, h3 {
+      margin: 0 0 10px;
       letter-spacing: -0.03em;
     }
 
-    h3 {
-      margin: 24px 0 10px;
-      font-size: 16px;
-      letter-spacing: -0.01em;
+    h1 {
+      margin-top: 14px;
+      font-size: clamp(32px, 7vw, 52px);
+      line-height: 1.02;
     }
 
-    p,
-    li {
+    h2 { font-size: 24px; margin-top: 4px; }
+    h3 { font-size: 17px; margin-top: 22px; }
+
+    p, li {
       color: var(--muted);
-      font-size: 15px;
       line-height: 1.7;
+      font-size: 15px;
+      margin: 0;
     }
 
     ul {
@@ -174,41 +111,66 @@
       padding-left: 18px;
     }
 
-    .section {
-      margin-top: 18px;
-    }
-
-    .badge-row {
+    .actions,
+    .nav,
+    .badges {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 18px;
     }
 
-    .badge {
-      padding: 9px 12px;
-      border: 1px solid var(--line);
+    .actions,
+    .badges { margin-top: 18px; }
+    .nav { margin-top: 12px; }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 14px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.04);
-      color: var(--muted);
-      font-size: 13px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      text-decoration: none;
       font-weight: 600;
     }
 
-    .meta {
+    .button.primary {
+      background: var(--button);
+      color: var(--button-text);
+      border-color: transparent;
+    }
+
+    .grid {
       display: grid;
-      gap: 12px;
-      margin-top: 18px;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
     }
 
-    .meta-item {
-      padding: 14px 16px;
-      border-radius: var(--radius-md);
-      background: rgba(255, 255, 255, 0.04);
+    .app-card {
       border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel-soft);
+      padding: 18px;
     }
 
-    .meta-item strong {
+    .meta {
+      margin-top: 18px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .meta div {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .meta strong {
       display: block;
       margin-bottom: 6px;
       color: var(--text);
@@ -216,155 +178,166 @@
     }
 
     .footer {
-      margin-top: 18px;
+      margin-top: 16px;
       text-align: center;
       color: var(--muted);
       font-size: 13px;
     }
 
     @media (max-width: 760px) {
-      .shell {
-        width: min(calc(100% - 20px), var(--max-width));
-        padding-top: 12px;
-      }
-
-      .hero,
-      .card {
-        padding: 20px;
-      }
-
       .grid {
         grid-template-columns: 1fr;
       }
+
+      .hero,
+      .section,
+      .app-card {
+        padding: 18px;
+      }
     }
   </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "RedactFlow Privacy, Support, and App Links",
+      "url": "https://muradiye8285.github.io/RedactFlow/",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "My Apps",
+        "itemListElement": [
+          {
+            "@type": "SoftwareApplication",
+            "position": 1,
+            "name": "RedactFlow",
+            "operatingSystem": "iOS",
+            "applicationCategory": "PhotoApplication",
+            "url": "https://muradiye8285.github.io/RedactFlow/redactflow.html",
+            "downloadUrl": "https://apps.apple.com/us/app/redactflow-blur-pixelate/id6763229770"
+          }
+        ]
+      }
+    }
+  </script>
 </head>
 <body>
-  <main class="shell">
-    <section class="hero">
-      <div class="eyebrow">RedactFlow | Privacy & Support</div>
-      <h1>Private by design.<br>Support in one place.</h1>
+  <main class="wrap">
+    <section class="hero" id="top">
+      <span class="eyebrow">RedactFlow | Privacy + Support + App Links</span>
+      <h1>RedactFlow for iPhone: blur photos, pixelate videos, and hide sensitive details.</h1>
       <p>
-        This page combines RedactFlow's Privacy Policy and Support information.
-        RedactFlow is a fully offline iPhone app for hiding sensitive details in photos
-        and videos before sharing.
+        This site helps users find RedactFlow, understand how it works, access support,
+        and review the app's privacy policy. RedactFlow is an offline iPhone tool to
+        redact screenshots, blur faces on iPhone, hide personal info in photos, and
+        prepare safer photo and video exports before sharing.
       </p>
-      <div class="hero-links">
-        <a class="primary" href="#privacy-policy">Privacy Policy</a>
-        <a href="#support">Support</a>
-        <a href="mailto:gokce8535@gmail.com">Email Support</a>
+      <div class="actions">
+        <a class="button primary" href="redactflow.html">Open RedactFlow Page</a>
+        <a class="button" href="https://apps.apple.com/us/app/redactflow-blur-pixelate/id6763229770">View on the App Store</a>
+        <a class="button" href="#privacy-policy">Privacy Policy</a>
+        <a class="button" href="#support">Support</a>
       </div>
-      <div class="badge-row">
-        <span class="badge">Fully Offline</span>
-        <span class="badge">No Tracking</span>
-        <span class="badge">No Analytics</span>
-        <span class="badge">No Account Required</span>
+      <div class="badges">
+        <span class="pill">Fully Offline</span>
+        <span class="pill">No Tracking</span>
+        <span class="pill">No Uploads</span>
+        <span class="pill">Privacy Photo App</span>
+      </div>
+    </section>
+
+    <section class="section" id="my-apps">
+      <h2>My Apps</h2>
+      <p>
+        Browse my iPhone apps. If you are looking for an app to blur photos on iPhone,
+        pixelate video on iOS, or hide sensitive details before posting online, start
+        with RedactFlow.
+      </p>
+      <div class="grid">
+        <article class="app-card">
+          <h3>RedactFlow</h3>
+          <p>
+            An iPhone app to blur photos, pixelate videos, redact screenshots, and hide
+            sensitive details such as faces, names, emails, addresses, and license plates.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="redactflow.html">Learn More</a>
+            <a class="button" href="https://apps.apple.com/us/app/redactflow-blur-pixelate/id6763229770">App Store Link</a>
+          </div>
+        </article>
       </div>
     </section>
 
     <div class="grid">
-      <section class="card" id="privacy-policy">
+      <section class="section" id="privacy-policy">
         <h2>Privacy Policy</h2>
         <p>Last updated: April 23, 2026</p>
 
         <h3>Overview</h3>
         <p>
-          RedactFlow is designed to help users blur, pixelate, or cover sensitive areas
-          in photos and videos before sharing. Privacy is a core product principle.
+          RedactFlow is built to help users blur photos on iPhone, redact screenshots,
+          pixelate video on iOS, and hide sensitive details before sharing.
         </p>
 
         <h3>Data Collection</h3>
         <p>
-          RedactFlow does not collect personal data, does not create user accounts, and
-          does not include analytics, advertising SDKs, or third-party trackers.
+          RedactFlow does not collect personal data, does not require an account, and
+          does not include analytics, ads, or third-party trackers.
         </p>
 
-        <h3>Photo and Video Access</h3>
+        <h3>Photos Access</h3>
         <p>
-          The app requests access to the Photos library only so you can import selected
-          photos or videos and save edited exports back to your library.
+          The app requests Photos access only to let users import selected photos or
+          videos and save edited exports back to the photo library.
         </p>
 
         <h3>On-Device Processing</h3>
         <p>
-          All redaction and export processing is performed locally on your iPhone.
-          Media is not uploaded to external servers or cloud services by RedactFlow.
+          All image and video redaction happens locally on the iPhone. Media is not
+          uploaded to remote servers.
         </p>
 
         <h3>Data Sharing</h3>
         <p>
-          RedactFlow does not sell, share, or disclose your media or personal
-          information to third parties.
-        </p>
-
-        <h3>Data Retention</h3>
-        <p>
-          RedactFlow does not maintain a remote database of user content. Imported media
-          remains in your Photos library unless you remove it. Temporary local files may
-          be created during editing or export and are only used for app functionality.
-        </p>
-
-        <h3>Children's Privacy</h3>
-        <p>
-          RedactFlow does not knowingly collect personal information from children.
-        </p>
-
-        <h3>Policy Changes</h3>
-        <p>
-          If this Privacy Policy changes, the updated version will be posted on this page
-          with a revised effective date.
+          RedactFlow does not sell, share, or disclose user media to third parties.
         </p>
       </section>
 
-      <section class="card" id="support">
+      <section class="section" id="support">
         <h2>Support</h2>
         <p>
-          Need help with RedactFlow? Use the support details below.
+          For help with imports, permissions, exports, or editing behavior, contact support.
         </p>
-
         <div class="meta">
-          <div class="meta-item">
+          <div>
             <strong>Support Email</strong>
             <a href="mailto:gokce8535@gmail.com">gokce8535@gmail.com</a>
           </div>
-          <div class="meta-item">
-            <strong>App</strong>
-            <span>RedactFlow for iPhone</span>
+          <div>
+            <strong>App Store</strong>
+            <a href="https://apps.apple.com/us/app/redactflow-blur-pixelate/id6763229770">RedactFlow on the App Store</a>
           </div>
-          <div class="meta-item">
-            <strong>Response Scope</strong>
-            <span>Import issues, export issues, permissions, and general app support</span>
+          <div>
+            <strong>Helpful Details</strong>
+            <span>Include your iPhone model, iOS version, app version, and whether the issue happened in photo or video mode.</span>
           </div>
         </div>
-
-        <h3>Before Contacting Support</h3>
-        <ul>
-          <li>Make sure your iPhone is running a supported iOS version.</li>
-          <li>Check whether Photos access is set to Full Access or Limited Access.</li>
-          <li>Try reopening the app if an import or export action appears stuck.</li>
-        </ul>
-
-        <h3>Helpful Details to Include</h3>
-        <ul>
-          <li>Your iPhone model and iOS version</li>
-          <li>The RedactFlow app version</li>
-          <li>Whether the issue happened with a photo or a video</li>
-          <li>Whether Photos permission was Full Access or Limited Access</li>
-          <li>A short description of what happened</li>
-        </ul>
-
-        <h3>Common Support Topics</h3>
-        <ul>
-          <li>Photos permission and limited library access</li>
-          <li>Importing photos or videos into the editor</li>
-          <li>Saving exports back to Photos</li>
-          <li>Blur, pixelate, or black bar behavior</li>
-        </ul>
       </section>
     </div>
 
+    <section class="section" id="links">
+      <h2>Quick Links</h2>
+      <div class="nav">
+        <a class="pill" href="#top">Top</a>
+        <a class="pill" href="#my-apps">My Apps</a>
+        <a class="pill" href="#privacy-policy">Privacy Policy</a>
+        <a class="pill" href="#support">Support</a>
+        <a class="pill" href="redactflow.html">RedactFlow Page</a>
+      </div>
+    </section>
+
     <p class="footer">
-      RedactFlow is a privacy-focused utility for safer sharing of screenshots, photos, and videos.
+      Last updated: April 23, 2026
     </p>
   </main>
 </body>

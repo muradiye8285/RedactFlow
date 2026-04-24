@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muradiye8285.github.io/RedactFlow/sitemap.xml

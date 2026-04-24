@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RedactFlow: Blur & Pixelate Photos and Videos</title>
+  <meta
+    name="description"
+    content="RedactFlow is an iPhone app to blur photos, pixelate videos, redact screenshots, and hide sensitive details before sharing. Works fully offline."
+  >
+  <meta
+    name="keywords"
+    content="blur photos iphone,pixelate video ios,hide sensitive details,redact screenshots,privacy photo app,blur faces iphone,hide personal info in photos,redactflow"
+  >
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://muradiye8285.github.io/RedactFlow/redactflow.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RedactFlow: Blur & Pixelate Photos and Videos">
+  <meta
+    property="og:description"
+    content="An iPhone app to blur photos, pixelate videos, hide sensitive details, and redact screenshots before sharing."
+  >
+  <meta property="og:url" content="https://muradiye8285.github.io/RedactFlow/redactflow.html">
+  <meta property="og:site_name" content="RedactFlow">
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0a1220;
+      --panel: #111b2f;
+      --panel-soft: #16253f;
+      --text: #f5f8ff;
+      --muted: #b2bfd9;
+      --line: rgba(255, 255, 255, 0.1);
+      --link: #d3e2ff;
+      --button: #dce8ff;
+      --button-text: #09111f;
+      --max: 920px;
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #12213c 0%, var(--bg) 24%, #08101b 100%);
+    }
+
+    a { color: var(--link); }
+
+    .wrap {
+      width: min(calc(100% - 24px), var(--max));
+      margin: 0 auto;
+      padding: 18px 0 40px;
+    }
+
+    .hero,
+    .section {
+      padding: 22px;
+      margin-top: 16px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    .hero {
+      background: linear-gradient(145deg, rgba(146, 188, 255, 0.16), rgba(18, 32, 60, 0.96));
+    }
+
+    .eyebrow,
+    .pill {
+      display: inline-block;
+      padding: 7px 11px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 10px;
+      letter-spacing: -0.03em;
+    }
+
+    h1 {
+      margin-top: 14px;
+      font-size: clamp(34px, 7vw, 56px);
+      line-height: 1.02;
+    }
+
+    h2 { font-size: 24px; margin-top: 4px; }
+    h3 { font-size: 17px; margin-top: 20px; }
+
+    p, li {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+
+    .actions,
+    .nav,
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .actions,
+    .badges { margin-top: 18px; }
+    .nav { margin-top: 12px; }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .button.primary {
+      background: var(--button);
+      color: var(--button-text);
+      border-color: transparent;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .box {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel-soft);
+    }
+
+    .faq-item + .faq-item {
+      margin-top: 18px;
+    }
+
+    .footer {
+      margin-top: 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero,
+      .section {
+        padding: 18px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RedactFlow",
+      "operatingSystem": "iOS",
+      "applicationCategory": "PhotoApplication",
+      "url": "https://muradiye8285.github.io/RedactFlow/redactflow.html",
+      "downloadUrl": "https://apps.apple.com/us/app/redactflow-blur-pixelate/id6763229770",
+      "description": "RedactFlow is an iPhone app to blur photos, pixelate videos, redact screenshots, and hide sensitive details before sharing. Works fully offline."
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How to blur photos on iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RedactFlow lets you blur photos on iPhone by adding one or more redaction boxes over private areas, then exporting a safe edited copy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to hide sensitive information in screenshots?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can redact screenshots in RedactFlow by placing blur, pixelate, or black bar regions over names, emails, addresses, or account details before sharing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How to pixelate a video on iOS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RedactFlow lets users pixelate video on iOS by selecting a video, placing redaction regions, and exporting the edited result directly back to Photos."
+          }
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero" id="top">
+      <span class="eyebrow">RedactFlow App Page</span>
+      <h1>RedactFlow: Blur & Pixelate Photos and Videos</h1>
+      <p>
+        RedactFlow is an iPhone app for people who want to blur photos on iPhone,
+        pixelate video on iOS, redact screenshots, and hide sensitive details before
+        sharing online. It is built for privacy-first editing and keeps the workflow
+        fully on-device.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="https://apps.apple.com/us/app/redactflow-blur-pixelate/id6763229770">Download on the App Store</a>
+        <a class="button" href="index.html">Back to Home</a>
+        <a class="button" href="#faq">FAQ</a>
+      </div>
+      <div class="badges">
+        <span class="pill">Blur Photos iPhone</span>
+        <span class="pill">Pixelate Video iOS</span>
+        <span class="pill">Hide Sensitive Details</span>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <h2>What RedactFlow Does</h2>
+      <p>
+        RedactFlow helps users hide personal information in photos and videos with blur,
+        pixelate, or black bar tools. It is useful for screenshots before sharing, content
+        creators cleaning visuals, and anyone who needs to hide personal info in photos,
+        blur faces on iPhone, or remove visible names, emails, and addresses from media.
+      </p>
+    </section>
+
+    <div class="grid">
+      <section class="section" id="features">
+        <h2>Key Features</h2>
+        <div class="box">
+          <ul>
+            <li>Blur, pixelate, or cover sensitive areas</li>
+            <li>Redact screenshots, photos, and videos</li>
+            <li>Works fully offline</li>
+            <li>No tracking</li>
+            <li>No uploads</li>
+            <li>Export edited media back to Photos</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="app-store-link">
+        <h2>App Store Link</h2>
+        <div class="box">
+          <p>
+            The official App Store listing for RedactFlow is here:
+          </p>
+          <p style="margin-top: 10px;">
+            <a href="https://apps.apple.com/us/app/redactflow-blur-pixelate/id6763229770">
+              https://apps.apple.com/us/app/redactflow-blur-pixelate/id6763229770
+            </a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section class="section" id="use-cases">
+      <h2>Common Use Cases</h2>
+      <div class="grid">
+        <div class="box">
+          <h3>Screenshots Before Sharing</h3>
+          <p>
+            RedactFlow is useful when you need to redact screenshots before sending them
+            in messages, posting them online, or using them in support conversations.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Content Creators Cleaning Visuals</h3>
+          <p>
+            Creators can hide sensitive details in photos and videos before publishing
+            tutorials, reels, stories, or client-facing content.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Hiding Faces and Personal Info</h3>
+          <p>
+            Use RedactFlow to blur faces on iPhone, hide names, cover emails, remove
+            addresses, and hide personal info in photos before sharing.
+          </p>
+        </div>
+        <div class="box">
+          <h3>Offline Privacy Workflow</h3>
+          <p>
+            RedactFlow fits users who want a privacy photo app that does not upload
+            media to a server and does not rely on tracking or analytics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <h2>FAQ</h2>
+
+      <div class="faq-item" id="faq-blur-photos">
+        <h3>How to blur photos on iPhone?</h3>
+        <p>
+          You can blur photos on iPhone with RedactFlow by selecting an image, placing
+          a rectangular redaction area over the private section, choosing Blur, and
+          exporting the result back to Photos.
+        </p>
+      </div>
+
+      <div class="faq-item" id="faq-hide-screenshots">
+        <h3>How to hide sensitive information in screenshots?</h3>
+        <p>
+          To hide sensitive details in screenshots, use RedactFlow to cover names, emails,
+          account numbers, or addresses with blur, pixelate, or black bars before sharing.
+        </p>
+      </div>
+
+      <div class="faq-item" id="faq-pixelate-video">
+        <h3>How to pixelate a video on iOS?</h3>
+        <p>
+          RedactFlow helps users pixelate video on iOS by letting them pick a video,
+          place redaction regions over the visible private area, and export the edited clip.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="links">
+      <h2>Internal Links</h2>
+      <div class="nav">
+        <a class="pill" href="#top">Top</a>
+        <a class="pill" href="#features">Features</a>
+        <a class="pill" href="#use-cases">Use Cases</a>
+        <a class="pill" href="#faq">FAQ</a>
+        <a class="pill" href="index.html">Home</a>
+      </div>
+    </section>
+
+    <p class="footer">
+      Last updated: April 23, 2026
+    </p>
+  </main>
+</body>
+</html>
